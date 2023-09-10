@@ -135,7 +135,7 @@ export default function UI({ ffmpeg }) {
 
             if (!file) return
 
-            if(!["audio/mp3", "audio/ogg"].includes(file.type)) return alert("Error: The file should be mp3 or ogg")
+            if(!["audio/ogg", "audio/mpeg"].includes(file.type)) return alert("Error: The file should be mp3 or ogg")
 
             setIsUploading(true)
 
